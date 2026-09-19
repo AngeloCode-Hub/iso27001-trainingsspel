@@ -1,0 +1,1638 @@
+{
+  "nl": {
+    "title": "Response ISO 27001 Awareness Game",
+    "description": "Multiple-choice scenariospel over informatiebeveiliging bij Response B.V., gebaseerd op het ISMS (Handboeken, Informatiebeveiligingsbeleid medewerkers, Incidentenregister).",
+    "categories": [
+      {
+        "id": "phishing",
+        "title": "Phishing & Social Engineering",
+        "icon": "🎣",
+        "intro": "Herken verdachte e-mails, telefoontjes en verzoeken voordat ze schade aanrichten.",
+        "questions": [
+          {
+            "id": "phishing-1",
+            "scenario": "Je krijgt een e-mail die zogenaamd van de directeur komt: een dringend verzoek om snel een betaling te doen, buiten de normale procedure om.",
+            "options": [
+              {
+                "text": "Meteen uitvoeren, het is toch de directeur",
+                "correct": false,
+                "feedback": "CEO-fraude is precies zo'n verzoek: urgent, ongebruikelijk en buiten de procedure om."
+              },
+              {
+                "text": "Het verzoek via een ander kanaal (telefonisch) verifiëren voordat je iets doet, en het melden",
+                "correct": true,
+                "feedback": "Precies goed. Ongebruikelijke verzoeken altijd verifiëren via een ander kanaal, en verdachte pogingen melden."
+              },
+              {
+                "text": "Negeren en er verder niks mee doen",
+                "correct": false,
+                "feedback": "Bijna goed: niet uitvoeren is terecht, maar je moet het ook melden zodat anderen gewaarschuwd worden."
+              },
+              {
+                "text": "Doorsturen naar collega's om te vragen wat zij ervan denken",
+                "correct": false,
+                "feedback": "Dit vertraagt en verspreidt het risico. Verifieer via een officieel kanaal en meld het."
+              }
+            ],
+            "explanation": "Misbruik van andermans identiteit, waaronder phishing en CEO-fraude, staat expliciet in de dreigingencatalogus. Verifieer ongebruikelijke verzoeken altijd via een ander kanaal en meld verdachte e-mails direct."
+          },
+          {
+            "id": "phishing-2",
+            "scenario": "Je klikt per ongeluk op een link in een verdachte e-mail voordat je doorhad dat het phishing was.",
+            "options": [
+              {
+                "text": "Niks zeggen, er is waarschijnlijk niks ergs gebeurd",
+                "correct": false,
+                "feedback": "Juist bij twijfel geldt: melden. Niet melden is de fout, niet de vergissing zelf."
+              },
+              {
+                "text": "Direct melden via het interne meldproces, ook al voel je je er ongemakkelijk bij",
+                "correct": true,
+                "feedback": "Correct. 'Fouten maken mag, niet melden mag niet' is precies hiervoor bedoeld."
+              },
+              {
+                "text": "Zelf proberen op te lossen door de computer te herstarten",
+                "correct": false,
+                "feedback": "Een herstart lost een mogelijke besmetting niet op en vertraagt de melding."
+              },
+              {
+                "text": "Wachten tot je zeker weet dat er echt iets mis is",
+                "correct": false,
+                "feedback": "Niet wachten op zekerheid — meld het meteen, ook bij twijfel."
+              }
+            ],
+            "explanation": "Het beleid is expliciet: beveiligingsincidenten direct melden via het interne meldproces. 'Fouten maken mag, niet melden mag niet.'"
+          },
+          {
+            "id": "phishing-3",
+            "scenario": "Een onbekende belt en stelt zich voor als IT-support. Hij vraagt je wachtwoord te bevestigen 'voor een controle'.",
+            "options": [
+              {
+                "text": "Wachtwoord doorgeven, IT-support heeft het vast nodig",
+                "correct": false,
+                "feedback": "IT-support heeft je wachtwoord nooit nodig. Dit is een klassieke social-engineeringtruc."
+              },
+              {
+                "text": "Nooit wachtwoorden delen, ook niet met (zogenaamde) IT-support, en dit melden als verdachte poging",
+                "correct": true,
+                "feedback": "Correct. Wachtwoorden worden nooit gedeeld, telefonisch al helemaal niet."
+              },
+              {
+                "text": "Een ander (nep)wachtwoord doorgeven om te testen",
+                "correct": false,
+                "feedback": "Ook dit geeft de aanvaller informatie en signaal dat je meewerkt. Gewoon niet doen."
+              },
+              {
+                "text": "Ophangen en er verder niets mee doen",
+                "correct": false,
+                "feedback": "Ophangen is prima, maar meld de poging alsnog zodat collega's gewaarschuwd kunnen worden."
+              }
+            ],
+            "explanation": "Wachtwoorden en accounts worden nooit gedeeld — met niemand, via geen enkel kanaal. Verdachte verzoeken hierom worden gemeld."
+          },
+          {
+            "id": "phishing-4",
+            "scenario": "Je herkent een phishingmail die naar een collega is gestuurd.",
+            "options": [
+              {
+                "text": "Waarschuw je collega direct en meld het via het interne meldproces",
+                "correct": true,
+                "feedback": "Goed gezien. Informatiebeveiliging is ieders verantwoordelijkheid."
+              },
+              {
+                "text": "Niks doen, het is niet jouw verantwoordelijkheid",
+                "correct": false,
+                "feedback": "Iedere medewerker draagt verantwoordelijkheid voor de veiligheid van informatie en systemen."
+              },
+              {
+                "text": "Zelf op de e-mail reageren om de afzender te ontmaskeren",
+                "correct": false,
+                "feedback": "Reageren kan de aanvaller bevestigen dat het adres actief is. Niet doen — meld het in plaats daarvan."
+              },
+              {
+                "text": "De e-mail bij je collega verwijderen zonder er iets over te zeggen",
+                "correct": false,
+                "feedback": "Zonder melding blijft het risico onzichtbaar voor de organisatie. Altijd melden."
+              }
+            ],
+            "explanation": "Een positieve meldcultuur betekent dat iedereen verantwoordelijkheid neemt, ook voor risico's die een collega raken."
+          }
+        ]
+      },
+      {
+        "id": "wachtwoorden",
+        "title": "Wachtwoorden & Toegang",
+        "icon": "🔑",
+        "intro": "Sterke wachtwoorden, MFA en het nooit delen van toegang.",
+        "questions": [
+          {
+            "id": "wachtwoord-1",
+            "scenario": "Je moet een nieuw wachtwoord bedenken voor een werkaccount.",
+            "options": [
+              {
+                "text": "Een kort wachtwoord dat makkelijk te onthouden is",
+                "correct": false,
+                "feedback": "Korte, onthoudbare wachtwoorden zijn juist het risico dat het beleid wil voorkomen."
+              },
+              {
+                "text": "Een door Bitwarden gegenereerde wachtwoordzin",
+                "correct": true,
+                "feedback": "Correct. Wachtwoordbeheer verloopt uitsluitend via Bitwarden Business."
+              },
+              {
+                "text": "Hetzelfde wachtwoord als je privémail",
+                "correct": false,
+                "feedback": "Hergebruik van wachtwoorden is een bekende zwakte — nooit hetzelfde wachtwoord op meerdere plekken."
+              },
+              {
+                "text": "Het wachtwoord opschrijven op een briefje naast je scherm",
+                "correct": false,
+                "feedback": "Een zichtbaar briefje maakt het wachtwoord voor iedereen in de ruimte toegankelijk."
+              }
+            ],
+            "explanation": "Wachtwoordbeheer verloopt uitsluitend via Bitwarden Business; een sterk/uniek wachtwoord en MFA zijn verplicht."
+          },
+          {
+            "id": "wachtwoord-2",
+            "scenario": "Een collega vraagt of hij tijdelijk met jouw account kan inloggen omdat zijn eigen account geblokkeerd is.",
+            "options": [
+              {
+                "text": "Prima, voor deze ene keer maakt het niet uit",
+                "correct": false,
+                "feedback": "Accounts delen is nooit toegestaan, ook niet 'voor even'."
+              },
+              {
+                "text": "Nee — accounts worden nooit gedeeld; verwijs hem naar HR/Security Manager voor herstel via identiteitsverificatie",
+                "correct": true,
+                "feedback": "Correct. Herstel van een geblokkeerd account loopt via HR/Security Manager, niet via een geleend account."
+              },
+              {
+                "text": "Je wachtwoord opschrijven en aan hem geven",
+                "correct": false,
+                "feedback": "Ook opschrijven en doorgeven is wachtwoorden delen — niet toegestaan."
+              },
+              {
+                "text": "Zelf even voor hem inloggen en het werk overnemen",
+                "correct": false,
+                "feedback": "Dit omzeilt het toegangsbeheer en de need-to-know-toewijzing van rechten."
+              }
+            ],
+            "explanation": "Toegang volgt need-to-know per persoon. Accounts en wachtwoorden worden nooit gedeeld; herstel loopt via HR/Security Manager."
+          },
+          {
+            "id": "wachtwoord-3",
+            "scenario": "Je account is na 5 mislukte inlogpogingen geblokkeerd, midden op de werkdag.",
+            "options": [
+              {
+                "text": "Zelf resetten via een link die je toegestuurd kreeg",
+                "correct": false,
+                "feedback": "Herstel loopt via een geverifieerd, formeel proces, niet via een willekeurige link."
+              },
+              {
+                "text": "Gewoon wachten, morgen is het vanzelf weer goed",
+                "correct": false,
+                "feedback": "Overdag is de lock-out 10 minuten of vereist verificatie — wachten tot morgen is niet nodig én lost het niet automatisch op buiten werktijd."
+              },
+              {
+                "text": "Contact opnemen met HR/Security Manager voor identiteitsverificatie",
+                "correct": true,
+                "feedback": "Correct. Herstel na lock-out verloopt via HR/Security Manager-identiteitsverificatie."
+              },
+              {
+                "text": "Een nieuw account laten aanmaken",
+                "correct": false,
+                "feedback": "Een nieuw account omzeilt het herstelproces en laat het oude account onbeheerd geblokkeerd."
+              }
+            ],
+            "explanation": "Lock-out na 5 mislukte pogingen (10 minuten overdag, permanent buiten werktijd); herstel via HR/Security Manager-identiteitsverificatie."
+          },
+          {
+            "id": "wachtwoord-4",
+            "scenario": "Je loopt even weg van je bureau voor een kop koffie.",
+            "options": [
+              {
+                "text": "Laptop open laten staan, je bent zo terug",
+                "correct": false,
+                "feedback": "Ook 'even' is genoeg tijd voor iemand om ongeautoriseerd mee te kijken of iets te doen."
+              },
+              {
+                "text": "Laptop/scherm vergrendelen voordat je wegloopt",
+                "correct": true,
+                "feedback": "Correct. Apparaten worden altijd vergrendeld bij afwezigheid, hoe kort ook."
+              },
+              {
+                "text": "Alleen het scherm dimmen",
+                "correct": false,
+                "feedback": "Dimmen vergrendelt niets — de sessie blijft toegankelijk."
+              },
+              {
+                "text": "Alleen vergrendelen als je langer dan 10 minuten wegblijft",
+                "correct": false,
+                "feedback": "Er geldt geen minimumtijd: bij elke afwezigheid vergrendelen."
+              }
+            ],
+            "explanation": "Laptop en telefoon worden bij elke afwezigheid vergrendeld, ongeacht de duur."
+          }
+        ]
+      },
+      {
+        "id": "cleandesk",
+        "title": "Clean Desk & Clear Screen",
+        "icon": "🗄️",
+        "intro": "Werkplekken, printjes en whiteboards die niemand anders mag zien.",
+        "questions": [
+          {
+            "id": "cleandesk-1",
+            "scenario": "Je gaat naar huis. Op je bureau ligt nog een print met klantgegevens.",
+            "options": [
+              {
+                "text": "Laten liggen, ruim je morgen wel op",
+                "correct": false,
+                "feedback": "Vertrouwelijke informatie blijft dan onbeheerd achter, buiten werktijd."
+              },
+              {
+                "text": "Opbergen in een afgesloten lade/kast, of direct vernietigen via de papierversnipperaar",
+                "correct": true,
+                "feedback": "Correct. Dit is precies het clear desk-principe in de praktijk."
+              },
+              {
+                "text": "In de gewone prullenbak gooien",
+                "correct": false,
+                "feedback": "Een gewone prullenbak beschermt vertrouwelijke informatie niet — gebruik de papierversnipperaar."
+              },
+              {
+                "text": "Meenemen naar huis om rustig door te lezen",
+                "correct": false,
+                "feedback": "Bedrijfsinformatie hoort niet ongecontroleerd buiten het pand."
+              }
+            ],
+            "explanation": "Papier met vertrouwelijke informatie wordt via een cross-cut versnipperaar vernietigd of veilig opgeborgen — nooit onbeheerd achtergelaten."
+          },
+          {
+            "id": "cleandesk-2",
+            "scenario": "Je werkt onderweg (trein, café) aan een vertrouwelijk document.",
+            "options": [
+              {
+                "text": "Gewoon doorwerken, niemand let er toch op",
+                "correct": false,
+                "feedback": "Meekijken ('shoulder surfing') is een reëel risico in openbare ruimtes."
+              },
+              {
+                "text": "Scherm afschermen of het werk uitstellen tot een veilige omgeving",
+                "correct": true,
+                "feedback": "Correct. Bij werken op afstand geldt hetzelfde clear desk/clear screen-principe als op kantoor."
+              },
+              {
+                "text": "Extra hard typen zodat niemand kan meelezen",
+                "correct": false,
+                "feedback": "Dit beschermt het scherm niet tegen meekijken."
+              },
+              {
+                "text": "Het scherm richting het raam draaien",
+                "correct": false,
+                "feedback": "Dit maakt het juist zichtbaarder voor mensen buiten."
+              }
+            ],
+            "explanation": "Bij werken op afstand gelden dezelfde principes als op kantoor: afgesloten werkruimte of scherm afschermen bij vertrouwelijk werk."
+          },
+          {
+            "id": "cleandesk-3",
+            "scenario": "Er loopt een bezoeker zonder begeleiding rond op kantoor.",
+            "options": [
+              {
+                "text": "Niet jouw probleem, de receptie regelt dat wel",
+                "correct": false,
+                "feedback": "Ongeautoriseerde toegang tot het pand is een erkend risico waar iedereen alert op moet zijn."
+              },
+              {
+                "text": "De bezoeker aanspreken en begeleiden, of het melden bij de juiste persoon",
+                "correct": true,
+                "feedback": "Correct. Onbegeleide bezoekers worden actief aangesproken of gemeld."
+              },
+              {
+                "text": "Negeren zolang hij nergens aan komt",
+                "correct": false,
+                "feedback": "Ook zonder fysiek contact kan een onbegeleide bezoeker meekijken of meeluisteren."
+              },
+              {
+                "text": "Hem vragen zich te legitimeren en hem daarna zelf verder laten lopen",
+                "correct": false,
+                "feedback": "Legitimatie alleen is niet genoeg — begeleiding blijft nodig."
+              }
+            ],
+            "explanation": "Het ongecontroleerd toelaten van externen in het pand of netwerk staat als expliciete dreiging genoemd — actief ingrijpen is de norm."
+          },
+          {
+            "id": "cleandesk-4",
+            "scenario": "Je verlaat een vergaderruimte waar het whiteboard nog vol staat met vertrouwelijke informatie.",
+            "options": [
+              {
+                "text": "Laten staan, de volgende groep veegt het vast af",
+                "correct": false,
+                "feedback": "Je kunt niet garanderen wie de ruimte als volgende gebruikt of wat zij ermee doen."
+              },
+              {
+                "text": "Zelf uitvegen, of alleen een foto maken voor eigen notities en die daarna veilig verwijderen",
+                "correct": true,
+                "feedback": "Correct. Vertrouwelijke informatie hoort niet zichtbaar te blijven voor de volgende gebruikers van de ruimte."
+              },
+              {
+                "text": "Een foto maken en delen in de teamchat als notulen",
+                "correct": false,
+                "feedback": "Ongecontroleerd delen van een foto van een whiteboard kan gevoelige informatie breed verspreiden."
+              },
+              {
+                "text": "De deur op slot doen en het whiteboard laten staan",
+                "correct": false,
+                "feedback": "Een afgesloten deur is geen vervanging voor het daadwerkelijk beschermen van de informatie zelf."
+              }
+            ],
+            "explanation": "Bedrijfsinformatie wordt alleen met bevoegde personen gedeeld — onbedoeld zichtbaar laten staan voor de volgende gebruiker is daarmee in strijd."
+          }
+        ]
+      },
+      {
+        "id": "clouddata",
+        "title": "Gegevens delen & Cloud",
+        "icon": "☁️",
+        "intro": "Waar mag informatie wel en niet naartoe.",
+        "questions": [
+          {
+            "id": "cloud-1",
+            "scenario": "Je moet een groot bestand met een klant delen.",
+            "options": [
+              {
+                "text": "Via WeTransfer, dat is snel en gratis",
+                "correct": false,
+                "feedback": "WeTransfer staat expliciet op de lijst van niet-goedgekeurde clouddiensten."
+              },
+              {
+                "text": "Via OneDrive of Teams, de goedgekeurde bedrijfsopslag",
+                "correct": true,
+                "feedback": "Correct. Alleen OneDrive/Teams zijn toegestaan voor het delen van bestanden."
+              },
+              {
+                "text": "Via je privé Google Drive",
+                "correct": false,
+                "feedback": "Privé-clouddiensten vallen buiten het beheer en de encryptie van de organisatie."
+              },
+              {
+                "text": "Via je persoonlijke Dropbox-account",
+                "correct": false,
+                "feedback": "Ook Dropbox staat op de lijst van verboden, niet-goedgekeurde clouddiensten."
+              }
+            ],
+            "explanation": "Uploads naar niet-goedgekeurde clouddiensten zoals Dropbox, Google Drive en WeTransfer zijn verboden — alleen OneDrive/Teams zijn toegestaan."
+          },
+          {
+            "id": "cloud-2",
+            "scenario": "Je moet een wachtwoord of API-sleutel delen met een collega.",
+            "options": [
+              {
+                "text": "Via e-mail",
+                "correct": false,
+                "feedback": "E-mail is niet het aangewezen kanaal voor het delen van secrets."
+              },
+              {
+                "text": "Via de interne teamchat",
+                "correct": false,
+                "feedback": "Chatberichten zijn niet bedoeld voor het delen van vertrouwelijke inloggegevens."
+              },
+              {
+                "text": "Via het interne secrets-portaal (versleuteld, Bitwarden)",
+                "correct": true,
+                "feedback": "Correct. Secrets worden alleen versleuteld gedeeld via het interne secrets-portaal."
+              },
+              {
+                "text": "Mondeling doorgeven en laten onthouden",
+                "correct": false,
+                "feedback": "Dit is niet traceerbaar en niet praktisch voor complexe, gegenereerde wachtwoorden."
+              }
+            ],
+            "explanation": "Vertrouwelijke informatie zoals wachtwoorden, secrets en certificaten wordt alleen versleuteld verstuurd, via het interne secrets-portaal."
+          },
+          {
+            "id": "cloud-3",
+            "scenario": "Je wilt tests sneller draaien door productiedata te gebruiken in de ontwikkelomgeving.",
+            "options": [
+              {
+                "text": "Gewoon doen, het blijft toch intern",
+                "correct": false,
+                "feedback": "'Intern' is niet hetzelfde als toegestaan — productiedata is expliciet verboden in test-/ontwikkelomgevingen."
+              },
+              {
+                "text": "Alleen fictieve of gegenereerde testdata gebruiken",
+                "correct": true,
+                "feedback": "Correct. Test- en ontwikkelomgevingen gebruiken uitsluitend fictieve of gegenereerde data."
+              },
+              {
+                "text": "Een kopie van productiedata maken en die na de test meteen verwijderen",
+                "correct": false,
+                "feedback": "Ook tijdelijk gebruik van productiedata in een testomgeving is niet toegestaan."
+              },
+              {
+                "text": "Even navragen bij een collega of het goed is",
+                "correct": false,
+                "feedback": "Dit is een beleidsregel, geen individuele afweging tussen collega's."
+              }
+            ],
+            "explanation": "Test- en ontwikkelomgevingen gebruiken uitsluitend fictieve of gegenereerde data; productiedata is daar verboden."
+          },
+          {
+            "id": "cloud-4",
+            "scenario": "Microsoft Purview (DLP) geeft een waarschuwing dat je e-mail mogelijk een BSN bevat.",
+            "options": [
+              {
+                "text": "Waarschuwing negeren en toch versturen",
+                "correct": false,
+                "feedback": "De waarschuwing is er juist om te voorkomen dat gevoelige data ongecontroleerd naar buiten gaat."
+              },
+              {
+                "text": "Controleren of het klopt en de gevoelige data verwijderen of beveiligen voordat je verstuurt",
+                "correct": true,
+                "feedback": "Correct. De DLP-waarschuwing is bedoeld om je te laten stoppen en controleren."
+              },
+              {
+                "text": "De tekst in een ander programma plakken om de check te omzeilen",
+                "correct": false,
+                "feedback": "Het bewust omzeilen van een beveiligingscontrole is zelf een overtreding."
+              },
+              {
+                "text": "Het bestand hernoemen zodat het niet wordt herkend",
+                "correct": false,
+                "feedback": "Ook dit is een poging om de controle te omzeilen in plaats van het probleem op te lossen."
+              }
+            ],
+            "explanation": "Microsoft Purview signaleert gevoelige data zoals BSN, IBAN en persoonsgegevens om verzending te voorkomen of te laten controleren — niet om te omzeilen."
+          }
+        ]
+      },
+      {
+        "id": "thuiswerken",
+        "title": "Thuiswerken & Mobiele apparaten",
+        "icon": "📱",
+        "intro": "Veilig werken buiten kantoor en met mobiele apparatuur.",
+        "questions": [
+          {
+            "id": "thuis-1",
+            "scenario": "Je werkt vandaag thuis en moet inloggen op interne systemen.",
+            "options": [
+              {
+                "text": "Gewoon via je thuis-wifi, zonder extra stappen",
+                "correct": false,
+                "feedback": "Thuiswerken vereist altijd een beveiligde verbinding, ongeacht hoe vertrouwd je thuisnetwerk voelt."
+              },
+              {
+                "text": "Via VPN met MFA",
+                "correct": true,
+                "feedback": "Correct. VPN en MFA zijn verplicht bij thuiswerken."
+              },
+              {
+                "text": "Via een openbare hotspot in de buurt",
+                "correct": false,
+                "feedback": "Openbare hotspots zijn onvoorspelbaar beveiligd — niet gebruiken voor bedrijfstoegang."
+              },
+              {
+                "text": "Via een privélaptop die net iets sneller is",
+                "correct": false,
+                "feedback": "Alleen bedrijfsgoedgekeurde apparaten mogen worden gebruikt voor toegang tot bedrijfssystemen."
+              }
+            ],
+            "explanation": "Bij thuiswerken zijn VPN en MFA verplicht, samen met endpointbeveiliging op een bedrijfsgoedgekeurd apparaat."
+          },
+          {
+            "id": "thuis-2",
+            "scenario": "Je bedrijfslaptop wordt gestolen uit je auto.",
+            "options": [
+              {
+                "text": "Zelf een nieuwe kopen en het later wel melden",
+                "correct": false,
+                "feedback": "Verlies/diefstal moet direct gemeld worden, niet uitgesteld."
+              },
+              {
+                "text": "Direct melden via het interne meldproces",
+                "correct": true,
+                "feedback": "Correct. Verlies of diefstal van apparatuur wordt altijd direct gemeld."
+              },
+              {
+                "text": "Wachten tot zeker is dat hij niet terugkomt",
+                "correct": false,
+                "feedback": "Niet wachten — direct melden, ongeacht de kans dat het apparaat terugkomt."
+              },
+              {
+                "text": "Alleen je manager informeel op de hoogte stellen",
+                "correct": false,
+                "feedback": "Dit moet via het officiële meldproces, niet alleen informeel."
+              }
+            ],
+            "explanation": "Verlies van mobiele apparatuur is een erkende dreiging; direct melden via het interne meldproces is verplicht."
+          },
+          {
+            "id": "thuis-3",
+            "scenario": "Je wilt snel een bedrijfsbestand op je persoonlijke laptop zetten om vanavond thuis verder te werken.",
+            "options": [
+              {
+                "text": "Prima, het is toch voor werk",
+                "correct": false,
+                "feedback": "Het doel van het bestand maakt het niet toegestaan — het apparaat moet bedrijfsgoedgekeurd zijn."
+              },
+              {
+                "text": "Niet doen: bedrijfsbestanden horen alleen op bedrijfsgoedgekeurde apparaten",
+                "correct": true,
+                "feedback": "Correct. Persoonlijke apparaten vallen buiten het beheer en de beveiliging van de organisatie."
+              },
+              {
+                "text": "Mag, zolang je het bestand daarna weer verwijdert",
+                "correct": false,
+                "feedback": "Ook tijdelijk gebruik op een persoonlijk apparaat is niet toegestaan."
+              },
+              {
+                "text": "Mag, zolang het via e-mail wordt verstuurd",
+                "correct": false,
+                "feedback": "Het verzendkanaal verandert niets aan het feit dat het apparaat niet goedgekeurd is."
+              }
+            ],
+            "explanation": "Bedrijfsbestanden horen uitsluitend op bedrijfsgoedgekeurde apparaten en beveiligde opslag, nooit op persoonlijke apparaten of drives."
+          },
+          {
+            "id": "thuis-4",
+            "scenario": "Je wilt een USB-stick gebruiken om bestanden over te zetten.",
+            "options": [
+              {
+                "text": "Elke USB-stick werkt prima",
+                "correct": false,
+                "feedback": "USB-poorten zijn standaard geblokkeerd — een willekeurige stick werkt niet zomaar."
+              },
+              {
+                "text": "USB-poorten zijn standaard geblokkeerd; gebruik alleen goedgekeurde, versleutelde media",
+                "correct": true,
+                "feedback": "Correct. Alleen versleutelde, goedgekeurde media zijn toegestaan, en dan nog met beleid."
+              },
+              {
+                "text": "Alleen gebruiken als de stick klein genoeg is om niet op te vallen",
+                "correct": false,
+                "feedback": "De grootte van de stick heeft niets te maken met of het is toegestaan."
+              },
+              {
+                "text": "Prima, zolang het je eigen persoonlijke stick is",
+                "correct": false,
+                "feedback": "Juist persoonlijke, onbeheerde media vormen het risico dat dit beleid wil voorkomen."
+              }
+            ],
+            "explanation": "USB-poorten zijn standaard geblokkeerd via Intune; gebruik van media is alleen toegestaan met encryptie en onder het geldende beveiligingsbeleid."
+          }
+        ]
+      },
+      {
+        "id": "incidenten",
+        "title": "Incidenten melden",
+        "icon": "🚨",
+        "intro": "Wat je doet zodra er iets misgaat of verdacht is.",
+        "questions": [
+          {
+            "id": "incident-1",
+            "scenario": "Je merkt dat een systeem zich vreemd gedraagt en vermoedt malware.",
+            "options": [
+              {
+                "text": "Zelf proberen te herstellen voordat je iets meldt",
+                "correct": false,
+                "feedback": "Zelf handelen kan sporen wissen of het probleem juist verergeren."
+              },
+              {
+                "text": "Direct melden en het systeem laten isoleren, niet zelf oplossen",
+                "correct": true,
+                "feedback": "Correct. Het principe is: direct melden, niet zelf handelen."
+              },
+              {
+                "text": "Het systeem uitzetten en er verder niets mee doen",
+                "correct": false,
+                "feedback": "Uitzetten zonder melding laat het probleem onopgemerkt en onopgelost."
+              },
+              {
+                "text": "Afwachten of het probleem vanzelf verdwijnt",
+                "correct": false,
+                "feedback": "Afwachten vergroot het risico op verdere schade of verspreiding."
+              }
+            ],
+            "explanation": "Het reactieproces is: isoleren → scannen → rapporteren → herstellen → evalueren. Het uitgangspunt is direct melden, niet zelf handelen."
+          },
+          {
+            "id": "incident-2",
+            "scenario": "Je vermoedt dat er persoonsgegevens betrokken zijn bij een incident.",
+            "options": [
+              {
+                "text": "Dat hoeft niet apart gemeld te worden, het incidentproces dekt dit al",
+                "correct": false,
+                "feedback": "Persoonsgegevens vereisen een aparte, snelle route via de Privacy Officer."
+              },
+              {
+                "text": "De Privacy Officer wordt direct geïnformeerd; mogelijk volgt een melding aan de AP binnen 72 uur",
+                "correct": true,
+                "feedback": "Correct. Dit is precies de wettelijke datalekprocedure."
+              },
+              {
+                "text": "Wachten tot het eerstvolgende reguliere overleg",
+                "correct": false,
+                "feedback": "De 72-uurstermijn voor de AP laat geen ruimte om te wachten op een regulier overleg."
+              },
+              {
+                "text": "Zelf beoordelen of het een datalek is en verder niets doen",
+                "correct": false,
+                "feedback": "Deze beoordeling hoort bij de Security Officer en Privacy Officer samen, niet bij een individuele inschatting."
+              }
+            ],
+            "explanation": "Bij betrokkenheid van persoonsgegevens wordt de Privacy Officer direct geïnformeerd; een datalek moet binnen 72 uur bij de AP gemeld worden (AVG art. 33)."
+          },
+          {
+            "id": "incident-3",
+            "scenario": "Waar meld je een informatiebeveiligingsincident?",
+            "options": [
+              {
+                "text": "Via een informeel bericht aan een collega",
+                "correct": false,
+                "feedback": "Een informeel bericht wordt niet centraal geregistreerd en opgevolgd."
+              },
+              {
+                "text": "Via het incidentformulier in Zammad",
+                "correct": true,
+                "feedback": "Correct. Dit is het officiële meldkanaal, met opvolging door de Security Officer."
+              },
+              {
+                "text": "Mondeling tijdens de koffiepauze",
+                "correct": false,
+                "feedback": "Dit wordt niet vastgelegd en kan makkelijk vergeten worden."
+              },
+              {
+                "text": "Via een persoonlijke notitie voor jezelf",
+                "correct": false,
+                "feedback": "Een persoonlijke notitie bereikt niemand die actie kan ondernemen."
+              }
+            ],
+            "explanation": "Meldingen lopen via het incidentformulier in Zammad; ernstige meldingen gaan direct naar de Security Officer of Directie."
+          },
+          {
+            "id": "incident-4",
+            "scenario": "Hoe snel mag je terugkoppeling verwachten nadat je een incident hebt gemeld?",
+            "options": [
+              {
+                "text": "Nooit, meldingen verdwijnen doorgaans in het systeem",
+                "correct": false,
+                "feedback": "Terugkoppeling is een vast onderdeel van het proces."
+              },
+              {
+                "text": "Binnen 5 werkdagen",
+                "correct": true,
+                "feedback": "Correct. Terugkoppeling binnen 5 werkdagen is de norm."
+              },
+              {
+                "text": "Binnen een jaar, tijdens de jaarlijkse evaluatie",
+                "correct": false,
+                "feedback": "Dat is veel te laat voor een individuele melding."
+              },
+              {
+                "text": "Alleen als je er zelf actief naar vraagt",
+                "correct": false,
+                "feedback": "Terugkoppeling gebeurt proactief, niet alleen op verzoek."
+              }
+            ],
+            "explanation": "Op elke melding volgt terugkoppeling binnen 5 werkdagen, als onderdeel van de positieve meldcultuur."
+          }
+        ]
+      },
+      {
+        "id": "socialmedia",
+        "title": "Social Media & Werk/Privé",
+        "icon": "💬",
+        "intro": "Waar de grens ligt tussen werk en privé online.",
+        "questions": [
+          {
+            "id": "social-1",
+            "scenario": "Je wilt op LinkedIn iets posten over een interessant project bij Response.",
+            "options": [
+              {
+                "text": "Gewoon posten, het project is toch bijna klaar",
+                "correct": false,
+                "feedback": "De status van een project verandert niets aan de vertrouwelijkheid van de details."
+              },
+              {
+                "text": "Zorgvuldig zijn en geen vertrouwelijke bedrijfsinformatie delen",
+                "correct": true,
+                "feedback": "Correct. Zorgvuldigheid en het niet delen van vertrouwelijke informatie staan voorop."
+              },
+              {
+                "text": "Klantnamen erbij zetten voor extra geloofwaardigheid",
+                "correct": false,
+                "feedback": "Klantinformatie delen zonder toestemming is een schending van vertrouwelijkheid."
+              },
+              {
+                "text": "Een screenshot van een intern systeem toevoegen",
+                "correct": false,
+                "feedback": "Screenshots van interne systemen kunnen onbedoeld gevoelige informatie tonen."
+              }
+            ],
+            "explanation": "Op social media en andere media geldt zorgvuldigheid; het delen van vertrouwelijke bedrijfsinformatie is verboden."
+          },
+          {
+            "id": "social-2",
+            "scenario": "Je gebruikt je werktelefoon ook voor privé-e-mail.",
+            "options": [
+              {
+                "text": "Prima, dat doet toch iedereen",
+                "correct": false,
+                "feedback": "Het is expliciet niet toegestaan, ongeacht hoe gebruikelijk het voelt."
+              },
+              {
+                "text": "Niet toegestaan: geen privé-e-mail op bedrijfsapparatuur",
+                "correct": true,
+                "feedback": "Correct. Werk- en privégebruik van apparatuur worden gescheiden gehouden."
+              },
+              {
+                "text": "Alleen buiten werktijd",
+                "correct": false,
+                "feedback": "Het tijdstip maakt geen verschil — het gaat om het apparaat, niet om wanneer je het gebruikt."
+              },
+              {
+                "text": "Alleen als je een aparte app gebruikt",
+                "correct": false,
+                "feedback": "Een aparte app verandert niets aan het feit dat het bedrijfsapparaat is."
+              }
+            ],
+            "explanation": "Privé-e-mail op bedrijfsapparatuur is niet toegestaan — werk en privé blijven gescheiden."
+          },
+          {
+            "id": "social-3",
+            "scenario": "Je krijgt op je privételefoon een werkgerelateerd verzoek dat vertrouwelijke informatie bevat.",
+            "options": [
+              {
+                "text": "Gewoon reageren vanaf je privé-app",
+                "correct": false,
+                "feedback": "Vertrouwelijke werkcommunicatie hoort niet via privékanalen te lopen."
+              },
+              {
+                "text": "Werk- en privécommunicatie strikt gescheiden houden en reageren via bedrijfsmiddelen",
+                "correct": true,
+                "feedback": "Correct. Dit is precies waarom werk- en privécommunicatie strikt gescheiden blijven."
+              },
+              {
+                "text": "Het bericht doorsturen naar vrienden om een mening te vragen",
+                "correct": false,
+                "feedback": "Dit verspreidt vertrouwelijke informatie buiten de organisatie."
+              },
+              {
+                "text": "Negeren, want het is jouw privétijd",
+                "correct": false,
+                "feedback": "Negeren lost het onderliggende risico niet op — reageer via het juiste, gescheiden kanaal."
+              }
+            ],
+            "explanation": "Werk- en privégerelateerde communicatie worden strikt gescheiden gehouden, ook wanneer een verzoek op een privékanaal binnenkomt."
+          },
+          {
+            "id": "social-4",
+            "scenario": "Je verliest je smartphone, die ook zakelijke apps bevat.",
+            "options": [
+              {
+                "text": "Alleen je provider bellen om de simkaart te blokkeren",
+                "correct": false,
+                "feedback": "Dit beschermt de simkaart, maar niet de zakelijke data en apps op het toestel."
+              },
+              {
+                "text": "Direct melden, zodat het toestel op afstand vergrendeld of gewist kan worden",
+                "correct": true,
+                "feedback": "Correct. Direct melden maakt beheerd ingrijpen op afstand mogelijk."
+              },
+              {
+                "text": "Afwachten of iemand het toestel terugbrengt",
+                "correct": false,
+                "feedback": "Wachten vergroot het risico dat gevoelige data intussen toegankelijk blijft."
+              },
+              {
+                "text": "Gewoon een nieuwe telefoon kopen en verdergaan",
+                "correct": false,
+                "feedback": "Zonder melding blijft het verloren toestel met zakelijke toegang een open risico."
+              }
+            ],
+            "explanation": "Mobiele apparaten worden centraal beheerd; verlies of diefstal direct melden maakt het mogelijk het toestel op afstand te vergrendelen of te wissen."
+          }
+        ]
+      }
+    ]
+  },
+  "en": {
+    "title": "Response ISO 27001 Awareness Game",
+    "description": "Multiple-choice scenario game about information security at Response B.V., based on the ISMS (handbooks, employee information security policy, incident register).",
+    "categories": [
+      {
+        "id": "phishing",
+        "title": "Phishing & Social Engineering",
+        "icon": "🎣",
+        "intro": "Recognize suspicious emails, phone calls, and requests before they cause damage.",
+        "questions": [
+          {
+            "id": "phishing-1",
+            "scenario": "You receive an email that appears to be from the director: an urgent request to make a payment quickly, outside the normal procedure.",
+            "options": [
+              {
+                "text": "Do it right away, it's the director after all",
+                "correct": false,
+                "feedback": "This is exactly what CEO fraud looks like: urgent, unusual, and outside the normal procedure."
+              },
+              {
+                "text": "Verify the request through another channel (by phone) before doing anything, and report it",
+                "correct": true,
+                "feedback": "Exactly right. Always verify unusual requests through another channel, and report suspicious attempts."
+              },
+              {
+                "text": "Ignore it and do nothing further",
+                "correct": false,
+                "feedback": "Close, but not quite: not acting on it is right, but you should also report it so others can be warned."
+              },
+              {
+                "text": "Forward it to colleagues to ask what they think",
+                "correct": false,
+                "feedback": "This delays things and spreads the risk. Verify through an official channel and report it."
+              }
+            ],
+            "explanation": "Impersonation, including phishing and CEO fraud, is explicitly listed in the threat catalogue. Always verify unusual requests through another channel and report suspicious emails immediately."
+          },
+          {
+            "id": "phishing-2",
+            "scenario": "You accidentally click a link in a suspicious email before realizing it was phishing.",
+            "options": [
+              {
+                "text": "Say nothing, probably nothing bad happened",
+                "correct": false,
+                "feedback": "Especially when in doubt: report it. Not reporting is the mistake, not the slip-up itself."
+              },
+              {
+                "text": "Report it immediately through the internal reporting process, even if it feels uncomfortable",
+                "correct": true,
+                "feedback": "Correct. 'Mistakes are allowed, not reporting them isn't' exists for exactly this situation."
+              },
+              {
+                "text": "Try to fix it yourself by restarting the computer",
+                "correct": false,
+                "feedback": "A restart doesn't undo a possible infection and delays the report."
+              },
+              {
+                "text": "Wait until you're sure something is actually wrong",
+                "correct": false,
+                "feedback": "Don't wait for certainty — report it right away, even if you're unsure."
+              }
+            ],
+            "explanation": "The policy is explicit: report security incidents immediately through the internal reporting process. 'Mistakes are allowed, not reporting them isn't.'"
+          },
+          {
+            "id": "phishing-3",
+            "scenario": "A stranger calls claiming to be IT support and asks you to confirm your password 'for a check'.",
+            "options": [
+              {
+                "text": "Give the password, IT support probably needs it",
+                "correct": false,
+                "feedback": "IT support never needs your password. This is a classic social engineering trick."
+              },
+              {
+                "text": "Never share passwords, not even with (supposed) IT support, and report it as a suspicious attempt",
+                "correct": true,
+                "feedback": "Correct. Passwords are never shared, least of all over the phone."
+              },
+              {
+                "text": "Give a different (fake) password to test them",
+                "correct": false,
+                "feedback": "This still gives the attacker information and signals that you're cooperating. Don't do it."
+              },
+              {
+                "text": "Hang up and do nothing further",
+                "correct": false,
+                "feedback": "Hanging up is fine, but still report the attempt so colleagues can be warned."
+              }
+            ],
+            "explanation": "Passwords and accounts are never shared — with anyone, through any channel. Suspicious requests for them are reported."
+          },
+          {
+            "id": "phishing-4",
+            "scenario": "You recognize a phishing email that was sent to a colleague.",
+            "options": [
+              {
+                "text": "Warn your colleague right away and report it through the internal reporting process",
+                "correct": true,
+                "feedback": "Good catch. Information security is everyone's responsibility."
+              },
+              {
+                "text": "Do nothing, it's not your responsibility",
+                "correct": false,
+                "feedback": "Every employee is responsible for the security of information and systems."
+              },
+              {
+                "text": "Reply to the email yourself to unmask the sender",
+                "correct": false,
+                "feedback": "Replying can confirm to the attacker that the address is active. Don't — report it instead."
+              },
+              {
+                "text": "Delete the email from your colleague's inbox without saying anything",
+                "correct": false,
+                "feedback": "Without a report, the risk stays invisible to the organization. Always report it."
+              }
+            ],
+            "explanation": "A positive reporting culture means everyone takes responsibility, including for risks that affect a colleague."
+          }
+        ]
+      },
+      {
+        "id": "wachtwoorden",
+        "title": "Passwords & Access",
+        "icon": "🔑",
+        "intro": "Strong passwords, MFA, and never sharing access.",
+        "questions": [
+          {
+            "id": "wachtwoord-1",
+            "scenario": "You need to come up with a new password for a work account.",
+            "options": [
+              {
+                "text": "A short password that's easy to remember",
+                "correct": false,
+                "feedback": "Short, memorable passwords are exactly the risk this policy aims to prevent."
+              },
+              {
+                "text": "A passphrase generated by Bitwarden",
+                "correct": true,
+                "feedback": "Correct. Password management runs exclusively through Bitwarden Business."
+              },
+              {
+                "text": "The same password as your personal email",
+                "correct": false,
+                "feedback": "Reusing passwords is a known weakness — never use the same password in multiple places."
+              },
+              {
+                "text": "Write the password on a note next to your screen",
+                "correct": false,
+                "feedback": "A visible note makes the password accessible to anyone in the room."
+              }
+            ],
+            "explanation": "Password management runs exclusively through Bitwarden Business; a strong, unique password plus MFA is required."
+          },
+          {
+            "id": "wachtwoord-2",
+            "scenario": "A colleague asks if he can temporarily log in with your account because his own is blocked.",
+            "options": [
+              {
+                "text": "Sure, just this once won't hurt",
+                "correct": false,
+                "feedback": "Sharing accounts is never allowed, not even 'just once'."
+              },
+              {
+                "text": "No — accounts are never shared; refer him to HR/Security Manager for recovery through identity verification",
+                "correct": true,
+                "feedback": "Correct. Recovering a blocked account goes through HR/Security Manager, not a borrowed account."
+              },
+              {
+                "text": "Write down your password and give it to him",
+                "correct": false,
+                "feedback": "Writing it down and handing it over is still sharing a password — not allowed."
+              },
+              {
+                "text": "Log in for him yourself and take over his work",
+                "correct": false,
+                "feedback": "This bypasses access management and the need-to-know assignment of rights."
+              }
+            ],
+            "explanation": "Access follows need-to-know per person. Accounts and passwords are never shared; recovery goes through HR/Security Manager."
+          },
+          {
+            "id": "wachtwoord-3",
+            "scenario": "Your account gets locked after 5 failed login attempts, in the middle of the workday.",
+            "options": [
+              {
+                "text": "Reset it yourself through a link you were sent",
+                "correct": false,
+                "feedback": "Recovery goes through a verified, formal process, not a random link."
+              },
+              {
+                "text": "Just wait, it'll sort itself out by tomorrow",
+                "correct": false,
+                "feedback": "During the day the lockout is 10 minutes or requires verification — waiting until tomorrow isn't needed, and it won't resolve automatically outside working hours."
+              },
+              {
+                "text": "Contact HR/Security Manager for identity verification",
+                "correct": true,
+                "feedback": "Correct. Recovery after a lockout goes through HR/Security Manager identity verification."
+              },
+              {
+                "text": "Have a new account created",
+                "correct": false,
+                "feedback": "A new account bypasses the recovery process and leaves the old account blocked and unmanaged."
+              }
+            ],
+            "explanation": "Lockout after 5 failed attempts (10 minutes during the day, permanent outside working hours); recovery goes through HR/Security Manager identity verification."
+          },
+          {
+            "id": "wachtwoord-4",
+            "scenario": "You step away from your desk for a cup of coffee.",
+            "options": [
+              {
+                "text": "Leave the laptop open, you'll be right back",
+                "correct": false,
+                "feedback": "Even 'a moment' is enough time for someone to look over your shoulder or take action."
+              },
+              {
+                "text": "Lock the laptop/screen before walking away",
+                "correct": true,
+                "feedback": "Correct. Devices are always locked when unattended, no matter how briefly."
+              },
+              {
+                "text": "Just dim the screen",
+                "correct": false,
+                "feedback": "Dimming doesn't lock anything — the session stays accessible."
+              },
+              {
+                "text": "Only lock it if you'll be away for more than 10 minutes",
+                "correct": false,
+                "feedback": "There's no minimum time: lock it every time you step away."
+              }
+            ],
+            "explanation": "Laptops and phones are locked every time they're unattended, regardless of duration."
+          }
+        ]
+      },
+      {
+        "id": "cleandesk",
+        "title": "Clean Desk & Clear Screen",
+        "icon": "🗄️",
+        "intro": "Desks, printouts, and whiteboards that no one else should see.",
+        "questions": [
+          {
+            "id": "cleandesk-1",
+            "scenario": "You're heading home. A printout with customer data is still on your desk.",
+            "options": [
+              {
+                "text": "Leave it, you'll tidy up tomorrow",
+                "correct": false,
+                "feedback": "Confidential information would then sit unmanaged overnight."
+              },
+              {
+                "text": "Store it in a locked drawer/cabinet, or shred it right away",
+                "correct": true,
+                "feedback": "Correct. This is exactly the clean desk principle in practice."
+              },
+              {
+                "text": "Toss it in the regular bin",
+                "correct": false,
+                "feedback": "A regular bin doesn't protect confidential information — use the shredder."
+              },
+              {
+                "text": "Take it home to read at leisure",
+                "correct": false,
+                "feedback": "Company information shouldn't leave the building uncontrolled."
+              }
+            ],
+            "explanation": "Paper with confidential information is destroyed via a cross-cut shredder or stored securely — never left unattended."
+          },
+          {
+            "id": "cleandesk-2",
+            "scenario": "You're working on a confidential document while on the move (train, café).",
+            "options": [
+              {
+                "text": "Just keep working, no one's really watching",
+                "correct": false,
+                "feedback": "Shoulder surfing is a real risk in public spaces."
+              },
+              {
+                "text": "Shield your screen or postpone the work until you're in a secure setting",
+                "correct": true,
+                "feedback": "Correct. Working remotely follows the same clean desk/clear screen principle as the office."
+              },
+              {
+                "text": "Type extra fast so no one can read it",
+                "correct": false,
+                "feedback": "This doesn't protect the screen from being seen."
+              },
+              {
+                "text": "Turn the screen toward the window",
+                "correct": false,
+                "feedback": "That makes it more visible to people outside, not less."
+              }
+            ],
+            "explanation": "Remote work follows the same principles as the office: a private space or a shielded screen when working with confidential material."
+          },
+          {
+            "id": "cleandesk-3",
+            "scenario": "An unescorted visitor is walking around the office.",
+            "options": [
+              {
+                "text": "Not your problem, reception will handle it",
+                "correct": false,
+                "feedback": "Unauthorized access to the building is a recognized risk everyone should stay alert to."
+              },
+              {
+                "text": "Approach and escort them, or report it to the right person",
+                "correct": true,
+                "feedback": "Correct. Unescorted visitors are actively approached or reported."
+              },
+              {
+                "text": "Ignore it as long as they don't touch anything",
+                "correct": false,
+                "feedback": "Even without physical contact, an unescorted visitor can look or listen in."
+              },
+              {
+                "text": "Ask for ID and then let them continue on their own",
+                "correct": false,
+                "feedback": "ID alone isn't enough — escorting is still needed."
+              }
+            ],
+            "explanation": "Uncontrolled access by outsiders to the building or network is listed as an explicit threat — actively intervening is the norm."
+          },
+          {
+            "id": "cleandesk-4",
+            "scenario": "You leave a meeting room where the whiteboard is still full of confidential information.",
+            "options": [
+              {
+                "text": "Leave it, the next group will probably wipe it",
+                "correct": false,
+                "feedback": "You can't guarantee who uses the room next or what they'll do with it."
+              },
+              {
+                "text": "Wipe it yourself, or take a photo for your own notes and delete it securely afterward",
+                "correct": true,
+                "feedback": "Correct. Confidential information shouldn't stay visible for the next people using the room."
+              },
+              {
+                "text": "Take a photo and share it in the team chat as meeting notes",
+                "correct": false,
+                "feedback": "Sharing an uncontrolled photo of a whiteboard can spread sensitive information widely."
+              },
+              {
+                "text": "Lock the door and leave the whiteboard as is",
+                "correct": false,
+                "feedback": "A locked door doesn't actually protect the information itself."
+              }
+            ],
+            "explanation": "Company information is only shared with authorized people — leaving it visible for the next room users unintentionally goes against that."
+          }
+        ]
+      },
+      {
+        "id": "clouddata",
+        "title": "Data Sharing & Cloud",
+        "icon": "☁️",
+        "intro": "Where information may and may not go.",
+        "questions": [
+          {
+            "id": "cloud-1",
+            "scenario": "You need to share a large file with a customer.",
+            "options": [
+              {
+                "text": "Via WeTransfer, it's fast and free",
+                "correct": false,
+                "feedback": "WeTransfer is explicitly on the list of non-approved cloud services."
+              },
+              {
+                "text": "Via OneDrive or Teams, the approved company storage",
+                "correct": true,
+                "feedback": "Correct. Only OneDrive/Teams are approved for sharing files."
+              },
+              {
+                "text": "Via your personal Google Drive",
+                "correct": false,
+                "feedback": "Personal cloud services fall outside the organization's management and encryption."
+              },
+              {
+                "text": "Via your personal Dropbox account",
+                "correct": false,
+                "feedback": "Dropbox is also on the list of forbidden, non-approved cloud services."
+              }
+            ],
+            "explanation": "Uploads to non-approved cloud services such as Dropbox, Google Drive, and WeTransfer are forbidden — only OneDrive/Teams are approved."
+          },
+          {
+            "id": "cloud-2",
+            "scenario": "You need to share a password or API key with a colleague.",
+            "options": [
+              {
+                "text": "By email",
+                "correct": false,
+                "feedback": "Email is not the designated channel for sharing secrets."
+              },
+              {
+                "text": "Via the internal team chat",
+                "correct": false,
+                "feedback": "Chat messages aren't meant for sharing confidential credentials."
+              },
+              {
+                "text": "Via the internal secrets portal (encrypted, Bitwarden)",
+                "correct": true,
+                "feedback": "Correct. Secrets are only shared in encrypted form, via the internal secrets portal."
+              },
+              {
+                "text": "Tell them out loud and have them memorize it",
+                "correct": false,
+                "feedback": "This isn't traceable and isn't practical for complex, generated passwords."
+              }
+            ],
+            "explanation": "Confidential information such as passwords, secrets, and certificates is only sent in encrypted form, via the internal secrets portal."
+          },
+          {
+            "id": "cloud-3",
+            "scenario": "You want tests to run faster by using production data in the development environment.",
+            "options": [
+              {
+                "text": "Just do it, it stays internal anyway",
+                "correct": false,
+                "feedback": "'Internal' isn't the same as allowed — production data is explicitly forbidden in test/development environments."
+              },
+              {
+                "text": "Only use fictional or generated test data",
+                "correct": true,
+                "feedback": "Correct. Test and development environments use exclusively fictional or generated data."
+              },
+              {
+                "text": "Copy production data and delete it right after the test",
+                "correct": false,
+                "feedback": "Even temporary use of production data in a test environment isn't allowed."
+              },
+              {
+                "text": "Just ask a colleague if it's fine",
+                "correct": false,
+                "feedback": "This is a policy rule, not an individual judgment call between colleagues."
+              }
+            ],
+            "explanation": "Test and development environments use exclusively fictional or generated data; production data is forbidden there."
+          },
+          {
+            "id": "cloud-4",
+            "scenario": "Microsoft Purview (DLP) warns that your email might contain a national ID number.",
+            "options": [
+              {
+                "text": "Ignore the warning and send it anyway",
+                "correct": false,
+                "feedback": "The warning exists precisely to prevent sensitive data from leaving uncontrolled."
+              },
+              {
+                "text": "Check whether it's accurate and remove or secure the sensitive data before sending",
+                "correct": true,
+                "feedback": "Correct. The DLP warning is meant to make you stop and check."
+              },
+              {
+                "text": "Paste the text into another program to bypass the check",
+                "correct": false,
+                "feedback": "Deliberately bypassing a security control is itself a violation."
+              },
+              {
+                "text": "Rename the file so it isn't recognized",
+                "correct": false,
+                "feedback": "This is also an attempt to bypass the control rather than solve the problem."
+              }
+            ],
+            "explanation": "Microsoft Purview flags sensitive data such as national ID numbers, bank account numbers, and personal data to prevent or review sending it — not to be bypassed."
+          }
+        ]
+      },
+      {
+        "id": "thuiswerken",
+        "title": "Remote Work & Mobile Devices",
+        "icon": "📱",
+        "intro": "Working safely outside the office and with mobile devices.",
+        "questions": [
+          {
+            "id": "thuis-1",
+            "scenario": "You're working from home today and need to log in to internal systems.",
+            "options": [
+              {
+                "text": "Just use your home wifi, no extra steps",
+                "correct": false,
+                "feedback": "Remote work always requires a secure connection, no matter how trusted your home network feels."
+              },
+              {
+                "text": "Via VPN with MFA",
+                "correct": true,
+                "feedback": "Correct. VPN and MFA are required when working remotely."
+              },
+              {
+                "text": "Via a nearby public hotspot",
+                "correct": false,
+                "feedback": "Public hotspots have unpredictable security — don't use them for company access."
+              },
+              {
+                "text": "Via a personal laptop that's a bit faster",
+                "correct": false,
+                "feedback": "Only company-approved devices may be used to access company systems."
+              }
+            ],
+            "explanation": "Working from home requires VPN and MFA, along with endpoint security on a company-approved device."
+          },
+          {
+            "id": "thuis-2",
+            "scenario": "Your company laptop is stolen from your car.",
+            "options": [
+              {
+                "text": "Buy a new one yourself and report it later",
+                "correct": false,
+                "feedback": "Loss or theft must be reported immediately, not delayed."
+              },
+              {
+                "text": "Report it immediately through the internal reporting process",
+                "correct": true,
+                "feedback": "Correct. Loss or theft of equipment is always reported immediately."
+              },
+              {
+                "text": "Wait until you're sure it won't turn up",
+                "correct": false,
+                "feedback": "Don't wait — report it right away, regardless of the chance it's recovered."
+              },
+              {
+                "text": "Just let your manager know informally",
+                "correct": false,
+                "feedback": "This must go through the official reporting process, not just an informal heads-up."
+              }
+            ],
+            "explanation": "Loss of mobile equipment is a recognized threat; reporting it immediately through the internal reporting process is required."
+          },
+          {
+            "id": "thuis-3",
+            "scenario": "You want to quickly put a company file on your personal laptop to keep working on it tonight.",
+            "options": [
+              {
+                "text": "Fine, it's for work after all",
+                "correct": false,
+                "feedback": "The purpose of the file doesn't make it allowed — the device needs to be company-approved."
+              },
+              {
+                "text": "Don't: company files belong only on company-approved devices",
+                "correct": true,
+                "feedback": "Correct. Personal devices fall outside the organization's management and security."
+              },
+              {
+                "text": "Okay, as long as you delete the file afterward",
+                "correct": false,
+                "feedback": "Even temporary use on a personal device isn't allowed."
+              },
+              {
+                "text": "Okay, as long as it's sent by email",
+                "correct": false,
+                "feedback": "The delivery channel doesn't change the fact that the device isn't approved."
+              }
+            ],
+            "explanation": "Company files belong exclusively on company-approved devices and secure storage, never on personal devices or drives."
+          },
+          {
+            "id": "thuis-4",
+            "scenario": "You want to use a USB stick to transfer files.",
+            "options": [
+              {
+                "text": "Any USB stick works fine",
+                "correct": false,
+                "feedback": "USB ports are blocked by default — a random stick won't simply work."
+              },
+              {
+                "text": "USB ports are blocked by default; only use approved, encrypted media",
+                "correct": true,
+                "feedback": "Correct. Only encrypted, approved media are allowed, and even then under policy."
+              },
+              {
+                "text": "Only use it if the stick is small enough not to be noticed",
+                "correct": false,
+                "feedback": "The size of the stick has nothing to do with whether it's allowed."
+              },
+              {
+                "text": "Fine, as long as it's your own personal stick",
+                "correct": false,
+                "feedback": "Personal, unmanaged media are exactly the risk this policy aims to prevent."
+              }
+            ],
+            "explanation": "USB ports are blocked by default via Intune; use of media is only allowed with encryption and under the applicable security policy."
+          }
+        ]
+      },
+      {
+        "id": "incidenten",
+        "title": "Reporting Incidents",
+        "icon": "🚨",
+        "intro": "What to do the moment something goes wrong or looks suspicious.",
+        "questions": [
+          {
+            "id": "incident-1",
+            "scenario": "You notice a system behaving strangely and suspect malware.",
+            "options": [
+              {
+                "text": "Try to fix it yourself before reporting anything",
+                "correct": false,
+                "feedback": "Acting on your own can erase evidence or make the problem worse."
+              },
+              {
+                "text": "Report it immediately and have the system isolated, don't fix it yourself",
+                "correct": true,
+                "feedback": "Correct. The principle is: report immediately, don't act on your own."
+              },
+              {
+                "text": "Turn the system off and leave it at that",
+                "correct": false,
+                "feedback": "Turning it off without reporting leaves the problem unnoticed and unresolved."
+              },
+              {
+                "text": "Wait and see if the problem goes away on its own",
+                "correct": false,
+                "feedback": "Waiting increases the risk of further damage or spread."
+              }
+            ],
+            "explanation": "The response process is: isolate → scan → report → remediate → evaluate. The principle is to report immediately, not act on your own."
+          },
+          {
+            "id": "incident-2",
+            "scenario": "You suspect personal data is involved in an incident.",
+            "options": [
+              {
+                "text": "That doesn't need to be reported separately, the incident process already covers it",
+                "correct": false,
+                "feedback": "Personal data requires a separate, fast route via the Privacy Officer."
+              },
+              {
+                "text": "The Privacy Officer is informed immediately; a report to the data protection authority may follow within 72 hours",
+                "correct": true,
+                "feedback": "Correct. This is exactly the legal data breach procedure."
+              },
+              {
+                "text": "Wait until the next regular meeting",
+                "correct": false,
+                "feedback": "The 72-hour deadline for the data protection authority leaves no room to wait for a regular meeting."
+              },
+              {
+                "text": "Decide for yourself whether it's a data breach and do nothing further",
+                "correct": false,
+                "feedback": "This assessment belongs to the Security Officer and Privacy Officer together, not an individual judgment."
+              }
+            ],
+            "explanation": "When personal data is involved, the Privacy Officer is informed immediately; a data breach must be reported to the data protection authority within 72 hours (GDPR Art. 33)."
+          },
+          {
+            "id": "incident-3",
+            "scenario": "Where do you report an information security incident?",
+            "options": [
+              {
+                "text": "Through an informal message to a colleague",
+                "correct": false,
+                "feedback": "An informal message isn't logged centrally or followed up."
+              },
+              {
+                "text": "Through the incident form in Zammad",
+                "correct": true,
+                "feedback": "Correct. This is the official reporting channel, followed up by the Security Officer."
+              },
+              {
+                "text": "Verbally during the coffee break",
+                "correct": false,
+                "feedback": "This isn't recorded and can easily be forgotten."
+              },
+              {
+                "text": "In a personal note to yourself",
+                "correct": false,
+                "feedback": "A personal note doesn't reach anyone who can act on it."
+              }
+            ],
+            "explanation": "Reports go through the incident form in Zammad; serious reports go directly to the Security Officer or management."
+          },
+          {
+            "id": "incident-4",
+            "scenario": "How quickly can you expect feedback after reporting an incident?",
+            "options": [
+              {
+                "text": "Never, reports usually disappear into the system",
+                "correct": false,
+                "feedback": "Feedback is a fixed part of the process."
+              },
+              {
+                "text": "Within 5 working days",
+                "correct": true,
+                "feedback": "Correct. Feedback within 5 working days is the standard."
+              },
+              {
+                "text": "Within a year, during the annual review",
+                "correct": false,
+                "feedback": "That's far too late for an individual report."
+              },
+              {
+                "text": "Only if you actively ask for it yourself",
+                "correct": false,
+                "feedback": "Feedback is given proactively, not only on request."
+              }
+            ],
+            "explanation": "Every report is followed by feedback within 5 working days, as part of the positive reporting culture."
+          }
+        ]
+      },
+      {
+        "id": "socialmedia",
+        "title": "Social Media & Work/Personal Boundaries",
+        "icon": "💬",
+        "intro": "Where the line is between work and personal life online.",
+        "questions": [
+          {
+            "id": "social-1",
+            "scenario": "You want to post something on LinkedIn about an interesting project at Response.",
+            "options": [
+              {
+                "text": "Just post it, the project is almost finished anyway",
+                "correct": false,
+                "feedback": "The project's status doesn't change the confidentiality of the details."
+              },
+              {
+                "text": "Be careful and don't share confidential company information",
+                "correct": true,
+                "feedback": "Correct. Being careful and not sharing confidential information comes first."
+              },
+              {
+                "text": "Add customer names for extra credibility",
+                "correct": false,
+                "feedback": "Sharing customer information without consent is a breach of confidentiality."
+              },
+              {
+                "text": "Add a screenshot of an internal system",
+                "correct": false,
+                "feedback": "Screenshots of internal systems can unintentionally reveal sensitive information."
+              }
+            ],
+            "explanation": "Care is required on social media and other outlets; sharing confidential company information is forbidden."
+          },
+          {
+            "id": "social-2",
+            "scenario": "You also use your work phone for personal email.",
+            "options": [
+              {
+                "text": "Fine, everyone does that",
+                "correct": false,
+                "feedback": "It's explicitly not allowed, no matter how common it feels."
+              },
+              {
+                "text": "Not allowed: no personal email on company equipment",
+                "correct": true,
+                "feedback": "Correct. Work and personal use of equipment are kept separate."
+              },
+              {
+                "text": "Only outside working hours",
+                "correct": false,
+                "feedback": "The time of day makes no difference — it's about the device, not when you use it."
+              },
+              {
+                "text": "Only if you use a separate app",
+                "correct": false,
+                "feedback": "A separate app doesn't change the fact that it's company equipment."
+              }
+            ],
+            "explanation": "Personal email on company equipment is not allowed — work and personal stay separate."
+          },
+          {
+            "id": "social-3",
+            "scenario": "You receive a work-related request containing confidential information on your personal phone.",
+            "options": [
+              {
+                "text": "Just reply from your personal app",
+                "correct": false,
+                "feedback": "Confidential work communication shouldn't run through personal channels."
+              },
+              {
+                "text": "Keep work and personal communication strictly separate and reply through company means",
+                "correct": true,
+                "feedback": "Correct. This is exactly why work and personal communication stay strictly separate."
+              },
+              {
+                "text": "Forward the message to friends to ask their opinion",
+                "correct": false,
+                "feedback": "This spreads confidential information outside the organization."
+              },
+              {
+                "text": "Ignore it, it's your personal time",
+                "correct": false,
+                "feedback": "Ignoring it doesn't resolve the underlying risk — respond through the right, separate channel."
+              }
+            ],
+            "explanation": "Work and personal communication are kept strictly separate, even when a request arrives on a personal channel."
+          },
+          {
+            "id": "social-4",
+            "scenario": "You lose your smartphone, which also contains business apps.",
+            "options": [
+              {
+                "text": "Only call your provider to block the SIM card",
+                "correct": false,
+                "feedback": "This protects the SIM card, but not the business data and apps on the device."
+              },
+              {
+                "text": "Report it immediately, so the device can be remotely locked or wiped",
+                "correct": true,
+                "feedback": "Correct. Reporting it immediately enables managed remote action."
+              },
+              {
+                "text": "Wait and see if someone returns it",
+                "correct": false,
+                "feedback": "Waiting increases the risk that sensitive data remains accessible in the meantime."
+              },
+              {
+                "text": "Just buy a new phone and move on",
+                "correct": false,
+                "feedback": "Without a report, the lost device with business access remains an open risk."
+              }
+            ],
+            "explanation": "Mobile devices are centrally managed; reporting loss or theft immediately makes it possible to remotely lock or wipe the device."
+          }
+        ]
+      }
+    ]
+  }
+}
